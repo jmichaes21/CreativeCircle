@@ -1,13 +1,14 @@
 import React from 'react';
 // import SignIn from './src/screens/SignIn/index.js';
 import {View, Text} from 'react-native';
-// import Button from './source/components/atoms/Button';
-// import TextInput from './source/components/atoms/TextInput';
-// import Header from './source/components/molecules/Header';
-import OnBoard1 from './source/screens/Onboard1';
+import OpenApp from './source/screens/OpenApp';
 
 const App = () => {
-  return <View>CreativeCircleApps</View>;
+  return (
+    <View>
+      <OpenApp />
+    </View>
+  );
 };
 
 //Function Component
