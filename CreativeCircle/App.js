@@ -7,7 +7,7 @@ import {View, Text} from 'react-native';
 import OnBoard1 from './source/screens/Onboard1';
 
 const App = () => {
-  return <View>CreativeCircle</View>;
+  return <View>CreativeCircleApps</View>;
 };
 
 //Function Component
