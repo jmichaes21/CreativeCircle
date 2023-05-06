@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 // import SignIn from './src/screens/SignIn/index.js';
 import {View, Text} from 'react-native';
