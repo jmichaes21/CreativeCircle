@@ -4,6 +4,7 @@ import Logo from './img/Logo.png';
 import OnBoardFace1 from './img/OnBoardFace1.svg';
 import ProfileFace from './img/ProfileFace.jpg';
 import Michael from './img/Michael.jpg';
+import Karya from './img/Karya.png';
 
 import Home from './icons/Home.svg';
 import Menu from './icons/Menu.svg';
@@ -24,4 +25,5 @@ export {
   Michael,
   Send,
   Upload,
+  Karya,
 };
