@@ -89,6 +89,11 @@ const CustomerHome = () => {
         </View>
       </ScrollView>
       <BottomTemp />
+      <View style={styles.shareCreativity}>
+        <TouchableOpacity style={styles.postCreativity}>
+          <Text style={styles.textCreativity}>Make A Request!</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -220,5 +225,29 @@ const styles = StyleSheet.create({
     marginTop: 5,
     height: 200,
     backgroundColor: '#F7F2F2',
+  },
+  shareCreativity: {
+    width: 155,
+    height: 42,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 220,
+    marginBottom: 0,
+    paddingBottom: 20,
+  },
+  postCreativity: {
+    width: 155,
+    height: 42,
+    borderRadius: 10,
+    backgroundColor: '#1F2D71',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 200,
+  },
+  textCreativity: {
+    fontSize: 12,
+    fontFamily: 'Montserrat-SemiBold',
+    color: '#F7F2F2',
   },
 });

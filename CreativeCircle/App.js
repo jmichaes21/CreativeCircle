@@ -4,16 +4,14 @@ import React from 'react';
 // import {View, Text} from 'react-native';
 // import OpenApp from './source/screens/OpenApp';
 // import ApplyRequest from './source/screens/ApplyRequest';
-import SignIn from './source/screens/SignIn';
-
+// import SignIn from './source/screens/SignIn';
+import DesignerHome from './source/screens/DesignerHome';
 
 const App = () => {
-  return (
-      <SignIn />
-  );
+  return <DesignerHome />;
 };
 
 //Function Component
 
 //Export
-export default App;
+export default App;
