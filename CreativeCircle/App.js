@@ -6,13 +6,11 @@ import OpenApp from './source/screens/OpenApp';
 
 const App = () => {
   return (
-    <View>
       <OpenApp />
-    </View>
   );
 };
 
 //Function Component
 
 //Export
-export default App;
+export default App;
