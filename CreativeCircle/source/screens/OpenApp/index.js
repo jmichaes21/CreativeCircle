@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+/* eslint-disable prettier/prettier */
+import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
-import { Logo } from '../../assets';
+import {Logo} from '../../assets';
 
 const OpenApp = () => {
   return (
@@ -16,7 +17,6 @@ export default OpenApp;
 
 const styles = StyleSheet.create({
   container1: {
-    flex: 1,
     backgroundColor: '#F7F2F2',
     alignItems: 'center',
   },

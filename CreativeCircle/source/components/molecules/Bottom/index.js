@@ -28,14 +28,7 @@ const BottomTemp = () => {
 export default BottomTemp;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
+  container: {},
   bottom: {
     flexDirection: 'row',
     backgroundColor: '#F7F2F2',
