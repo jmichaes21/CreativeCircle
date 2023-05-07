@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'Montserrat-Regular',
     color: '#1F2D71',
-  },
+  },
 });
+

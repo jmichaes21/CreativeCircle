@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     marginRight: 83,
   },
   Menu: {
-    marginRight: 83,
-  },
+    marginRight: 83,
+  },
 });
+
