@@ -7,10 +7,11 @@ import React from 'react';
 // import SignIn from './source/screens/SignIn';
 // import DesignerHome from './source/screens/DesignerHome';
 // import ShareCreativity from './source/screens/ShareCreativity';
-import MakeRequest from './source/screens/MakeRequest';
+// import MakeRequest from './source/screens/MakeRequest';
+import OnBoard2 from './source/screens/Onboard2';
 
 const App = () => {
-  return <MakeRequest />;
+  return <OnBoard2 />;
 };
 
 //Function Component
