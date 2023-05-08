@@ -5,10 +5,13 @@ import React from 'react';
 // import OpenApp from './source/screens/OpenApp';
 // import ApplyRequest from './source/screens/ApplyRequest';
 // import SignIn from './source/screens/SignIn';
-import DesignerHome from './source/screens/DesignerHome';
+// import DesignerHome from './source/screens/DesignerHome';
+// import ShareCreativity from './source/screens/ShareCreativity';
+// import MakeRequest from './source/screens/MakeRequest';
+import OnBoard2 from './source/screens/Onboard2';
 
 const App = () => {
-  return <DesignerHome />;
+  return <OnBoard2 />;
 };
 
 //Function Component
