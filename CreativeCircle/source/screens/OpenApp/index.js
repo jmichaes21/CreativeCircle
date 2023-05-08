@@ -1,9 +1,22 @@
 /* eslint-disable prettier/prettier */
 import {StyleSheet, Text, View, Image} from 'react-native';
+import {useEffect} from 'react';
 import React from 'react';
 import {Logo} from '../../assets';
+import {useNavigation} from '@react-navigation/native';
 
 const OpenApp = () => {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      navigation.navigate('OnBoard1');
+    }, 2000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  });
   return (
     <View style={styles.container1}>
       <Image source={Logo} style={styles.logo} />
@@ -35,6 +48,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'Montserrat-Regular',
     color: '#1F2D71',
-  },
+  },
 });
-

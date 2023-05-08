@@ -4,7 +4,7 @@ import React from 'react';
 import {Logo} from '../../assets';
 import {Button, Gap, TextInputTemp} from '../../components/atoms';
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -29,9 +29,19 @@ const SignIn = () => {
           textColor="#000000"
         />
         <Gap height={15} />
-        <Button title="Sign In As Customer" color="#65BC9A" textColor="white" />
+        <Button
+          title="Sign In As Customer"
+          color="#65BC9A"
+          textColor="white"
+          onPress={() => navigation.navigate('CustomerHome')}
+        />
         <Gap height={15} />
-        <Button title="Sign In As Designer" color="#65BC9A" textColor="white" />
+        <Button
+          title="Sign In As Designer"
+          color="#65BC9A"
+          textColor="white"
+          onPress={() => navigation.navigate('DesignerHome')}
+        />
         <Gap height={50} />
         <TouchableOpacity style={styles.helpButton}>
           <Text style={styles.helpText}>Need Help?</Text>

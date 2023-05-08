@@ -3,11 +3,13 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Back, Settings} from '../../assets';
 
-const Setting = () => {
+const Setting = ({navigation}) => {
   return (
     <View>
       <View style={styles.header}>
-        <TouchableOpacity style={styles.back}>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => navigation.goBack()}>
           <View>
             <Back />
           </View>

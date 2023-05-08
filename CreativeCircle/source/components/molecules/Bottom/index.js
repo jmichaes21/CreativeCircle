@@ -3,7 +3,7 @@ import {StyleSheet, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Home, Menu, Settings} from '../../../assets';
 
-const BottomTemp = () => {
+const BottomTemp = ({onPress}) => {
   return (
     <View style={styles.bottom}>
       <TouchableOpacity>
@@ -16,7 +16,7 @@ const BottomTemp = () => {
           <Menu />
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
         <View style={styles.Settings}>
           <Settings />
         </View>
@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
     marginRight: 83,
   },
   Menu: {
-    marginRight: 83,
-  },
+    marginRight: 83,
+  },
 });
-

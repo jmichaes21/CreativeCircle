@@ -5,11 +5,13 @@ import {Back, ProfileFace, UploadPicturePost} from '../../assets';
 import {Gap, TextInputTemp} from '../../components/atoms';
 import BottomTemp from '../../components/molecules/Bottom';
 
-const MakeRequest = () => {
+const MakeRequest = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity style={styles.back}>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => navigation.goBack()}>
           <View>
             <Back />
           </View>
@@ -53,7 +55,7 @@ const MakeRequest = () => {
           <Text style={styles.SendRequestText}>Send Request!</Text>
         </View>
       </TouchableOpacity>
-      <BottomTemp />
+      <BottomTemp onPress={() => navigation.navigate('Setting')} />
     </View>
   );
 };

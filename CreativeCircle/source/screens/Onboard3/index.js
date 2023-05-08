@@ -4,7 +4,7 @@ import React from 'react';
 import {Logo, OnBoard3Pict, OnBoardFace1} from '../../assets';
 import {Gap} from '../../components/atoms';
 
-const OnBoard3 = () => {
+const OnBoard3 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image source={Logo} style={styles.Logo} />
@@ -12,7 +12,9 @@ const OnBoard3 = () => {
       <OnBoard3Pict />
       <Gap height={11} />
       <Text style={styles.text}>Personlize Your Profile</Text>
-      <TouchableOpacity activeOpacity={0.5}>
+      <TouchableOpacity
+        activeOpacity={0.5}
+        onPress={() => navigation.navigate('SignIn')}>
         <View style={styles.containerText}>
           <Text style={styles.buttonText}>Get Started !</Text>
         </View>
