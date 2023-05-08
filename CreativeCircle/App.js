@@ -5,10 +5,11 @@ import React from 'react';
 // import OpenApp from './source/screens/OpenApp';
 // import ApplyRequest from './source/screens/ApplyRequest';
 // import SignIn from './source/screens/SignIn';
-import DesignerHome from './source/screens/DesignerHome';
+// import DesignerHome from './source/screens/DesignerHome';
+import ShareCreativity from './source/screens/ShareCreativity';
 
 const App = () => {
-  return <DesignerHome />;
+  return <ShareCreativity />;
 };
 
 //Function Component

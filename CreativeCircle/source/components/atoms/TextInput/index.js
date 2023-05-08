@@ -18,15 +18,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Montserrat-Medium',
     marginBottom: 4,
-    color: 'black',
+    color: 'white',
     marginLeft: 26,
   },
   input: {
-    borderWidth: 1,
     borderColor: '#020202',
     borderRadius: 10,
     paddingLeft: 16,
     paddingVertical: 10,
     marginHorizontal: 26,
-  },
+    backgroundColor: '#F7F2F2',
+  },
 });
