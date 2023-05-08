@@ -12,7 +12,7 @@ import {Huannn, Karya, Logo, Michael} from '../../assets';
 import {ProfileFace} from '../../assets';
 import BottomTemp from '../../components/molecules/Bottom';
 
-const DesignerHome = () => {
+const DesignerHome = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -38,7 +38,9 @@ const DesignerHome = () => {
               Kindly apply this request if you feel interested
             </Text>
           </View>
-          <TouchableOpacity style={styles.applyButtonClick}>
+          <TouchableOpacity
+            style={styles.applyButtonClick}
+            onPress={() => navigation.navigate('ApplyRequest')}>
             <View style={styles.applyButton}>
               <Text style={styles.applyText}>Apply</Text>
             </View>
@@ -88,9 +90,11 @@ const DesignerHome = () => {
           </TouchableOpacity>
         </View>
       </ScrollView>
-      <BottomTemp />
+      <BottomTemp onPress={() => navigation.navigate('Setting')} />
       <View style={styles.shareCreativity}>
-        <TouchableOpacity style={styles.postCreativity}>
+        <TouchableOpacity
+          style={styles.postCreativity}
+          onPress={() => navigation.navigate('ShareCreativity')}>
           <Text style={styles.textCreativity}>Share Your Creativity!</Text>
         </TouchableOpacity>
       </View>

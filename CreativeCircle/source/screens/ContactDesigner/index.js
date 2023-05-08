@@ -12,11 +12,13 @@ import BottomTemp from '../../components/molecules/Bottom';
 import {Back, Michael, ProfileFace, Send, Upload} from '../../assets';
 import {Gap} from '../../components/atoms';
 
-const ContactDesigner = () => {
+const ContactDesigner = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity style={styles.back}>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => navigation.goBack()}>
           <View>
             <Back />
           </View>
@@ -44,7 +46,7 @@ const ContactDesigner = () => {
           <Send style={styles.send} />
         </TouchableOpacity>
       </View>
-      <BottomTemp />
+      <BottomTemp onPress={() => navigation.navigate('Setting')} />
     </View>
   );
 };

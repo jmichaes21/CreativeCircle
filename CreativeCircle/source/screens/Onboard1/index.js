@@ -4,7 +4,7 @@ import React from 'react';
 import {Logo, OnBoardFace1} from '../../assets';
 import {Gap} from '../../components/atoms';
 
-const OnBoard1 = onPress => {
+const OnBoard1 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image source={Logo} style={styles.Logo} />
@@ -12,7 +12,9 @@ const OnBoard1 = onPress => {
       <OnBoardFace1 style={styles.OnBoardFace1} />
       <Gap height={11} />
       <Text style={styles.text}>Find Your Favorite Designer!</Text>
-      <TouchableOpacity activeOpacity={0.5}>
+      <TouchableOpacity
+        activeOpacity={0.5}
+        onPress={() => navigation.navigate('OnBoard2')}>
         <View style={styles.containerText}>
           <Text style={styles.buttonText}>Next</Text>
         </View>

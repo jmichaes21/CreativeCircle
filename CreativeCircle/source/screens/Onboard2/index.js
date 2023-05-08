@@ -3,7 +3,8 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Logo, OnBoard2Left, OnBoard2Right} from '../../assets';
 import {Gap} from '../../components/atoms';
-const OnBoard2 = () => {
+
+const OnBoard2 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image source={Logo} style={styles.Logo} />
@@ -15,7 +16,9 @@ const OnBoard2 = () => {
 
       <Gap height={11} />
       <Text style={styles.text}>Make A Wonderful Collaboration</Text>
-      <TouchableOpacity activeOpacity={0.5}>
+      <TouchableOpacity
+        activeOpacity={0.5}
+        onPress={() => navigation.navigate('OnBoard3')}>
         <View style={styles.containerText}>
           <Text style={styles.buttonText}>Next</Text>
         </View>
